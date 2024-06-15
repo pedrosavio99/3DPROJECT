@@ -12,7 +12,7 @@ const Model = () => {
 const MyScenePhone2 = () => {
   return (
     <Canvas
-      style={{ width: '400px', height: '400px' }}
+      style={{ width: '300px', height: '300px' }}
       camera={{ position: [10, 10, 10], fov: 70 }} // Ajuste da posição da câmera e do fov
     >
       {/* Luz ambiente com intensidade aumentada */}
