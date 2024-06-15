@@ -11,7 +11,8 @@ const App = () => {
   };
 
   return (
-    <div className="App min-h-screen h-fit w-screen bg-slate-600 flex flex-col items-center justify-center">
+    <div className="App min-h-screen h-fit w-screen bg-slate-400 flex flex-col items-center justify-center">
+      <div className="absolute top-5 text-4xl">eh o braia</div>
       <main className="flex flex-col items-center justify-center h-full">
         <div style={{ display: activeScene === 1 ? 'block' : 'none' }}>
           <MyScene />
