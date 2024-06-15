@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import MyScene from "./components/MyScene";
-import MyScenePhone from "./components/Myphone";
 import MyScenePhone2 from "./components/Myphone2";
 import "./index.css";
 
@@ -17,9 +16,9 @@ const App = () => {
         <div style={{ display: activeScene === 1 ? 'block' : 'none' }}>
           <MyScene />
         </div>
-        <div style={{ display: activeScene === 2 ? 'block' : 'none' }}>
+        {/* <div style={{ display: activeScene === 2 ? 'block' : 'none' }}>
           <MyScenePhone />
-        </div>
+        </div> */}
         <div style={{ display: activeScene === 3 ? 'block' : 'none' }}>
           <MyScenePhone2 />
         </div>
@@ -32,12 +31,12 @@ const App = () => {
         >
          cubo
         </button>
-        <button
+        {/* <button
           className={`mx-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ${activeScene === 2 ? 'bg-blue-700' : ''}`}
           onClick={() => handleSceneChange(2)}
         >
          moto
-        </button>
+        </button> */}
         <button
           className={`mx-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ${activeScene === 3 ? 'bg-blue-700' : ''}`}
           onClick={() => handleSceneChange(3)}

@@ -6,7 +6,7 @@ import React from 'react'
 const Model = () => {
   // Substitua pelo caminho correto para o seu arquivo GLTF/GLB
   const { scene } = useGLTF('/model2/scene.gltf')
-  return <primitive object={scene} scale={1.2} /> // Ajuste a escala conforme necessário
+  return <primitive object={scene} scale={2.2} /> // Ajuste a escala conforme necessário
 }
 
 const MyScenePhone2 = () => {
