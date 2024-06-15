@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Button from "./components/Button";
+import MyScene from "./components/MyScene";
+import "./index.css";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <>
+      <div className="App h-screen w-screen bg-slate-600 flex flex-col items-center justify-center">
+        <Button
+          onClick={() => console.log("teste")}
+          variant="primario"
+          status="default"
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          projeto base
+        </Button>
+        <header className="App-header">
+          <h1>My 3D Scene</h1>
+        </header>
+        <main>
+          <MyScene />
+        </main>
+      </div>
+    </>
   );
-}
+};
 
 export default App;
