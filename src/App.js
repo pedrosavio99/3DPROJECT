@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import Mymodel3d from "./components/MyModel3d";
 import MyScene from "./components/MyScene";
 import MyScenePhone2 from "./components/Myphone2";
+
 import "./index.css";
 
 const App = () => {
@@ -20,6 +22,12 @@ const App = () => {
         {/* <div style={{ display: activeScene === 2 ? 'block' : 'none' }}>
           <MyScenePhone />
         </div> */}
+
+        <div style={{ display: activeScene === 2 ? 'block' : 'none' }}>
+          <Mymodel3d />
+        </div> 
+
+
         <div style={{ display: activeScene === 3 ? 'block' : 'none' }}>
           <MyScenePhone2 />
         </div>
@@ -32,12 +40,12 @@ const App = () => {
         >
          cubo
         </button>
-        {/* <button
+         <button
           className={`mx-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ${activeScene === 2 ? 'bg-blue-700' : ''}`}
           onClick={() => handleSceneChange(2)}
         >
-         moto
-        </button> */}
+         lovino
+        </button> 
         <button
           className={`mx-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ${activeScene === 3 ? 'bg-blue-700' : ''}`}
           onClick={() => handleSceneChange(3)}
